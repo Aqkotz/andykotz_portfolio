@@ -1,38 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Vesper+Libre:wght@500&display=swap');
+
 .App {
-  text-align: center;
+  background-color: #f1f1f1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Header {
+  background-color: #f1f1f1;
+  padding: 50px;
+  padding-bottom: 150px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h1 {
+  font-size: 3.5em;
+  font-weight: bold;
+  margin: 0;
+  padding: 10px;
+  font-family: 'Nunito', sans-serif;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Header h1 {
+  color: #000000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.5em;
+  margin: 0;
+  padding: 10px;
+  color: #ffffff
+}
+
+.TopBarButton {
+  border-bottom: 2px solid #000000;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 10px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.About{
+  background-color: #3c5695;
+  padding: 50px;
+  padding-bottom: 100px;
+}
+
+.Projects{
+  background-color: #678ba4;
+  padding: 50px;
+  padding-bottom: 100px;
+}
+
+.Skills{
+  background-color: #369b9b;
+  padding: 50px;
+  padding-bottom: 100px;
+}
+
+.Resume{
+  background-color: #54a871;
+  padding: 50px;
+  padding-bottom: 100px;
+}
+
+.Contact{
+  background-color: #98ba5d;
+  padding: 50px;
+  padding-bottom: 100px;
+}
+
+.footer {
+  color: black;
 }
