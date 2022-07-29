@@ -30,7 +30,7 @@ function App() {
       <Skills innerRef={skillsRef}/>
       <Resume innerRef={resumeRef}/>
       <Contact innerRef={contactRef}/>
-      <p className='footer' >Designed and developed by Andy Kotz</p>
+      <p className='footer' style={{color:"grey", fontSize:"1em"}}>Designed and developed by Andy Kotz</p>
     </div>
   );
 }

@@ -6,7 +6,13 @@ function Contact(props){
         <div className="Contact" ref={props.innerRef}>
             <h1>Contact</h1>
             <p>
-                &nbsp; &nbsp; &nbsp; &nbsp;I'm a Computer Science and Engineering student at Dartmouth College interested in Software Engineering. I have experience in web development, mobile development, and virtual reality.
+                Dartmouth Email: <a href="mailto:andy.24@dartmouth.edu" style={{color:"#0f8dd6"}}>andy.24@dartmouth.edu</a>
+            </p>
+            <p>
+                Personal Email: <a href="mailto:andy.lyme@mac.com" style={{color:"#0f8dd6"}}>andy.lyme@mac.com</a>
+            </p>
+            <p>
+                Phone: (603) 277-0714
             </p>
         </div>
     )
