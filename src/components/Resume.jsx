@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import '../App.css';
-import resume from '../assets/resume.pdf';
+import resume from '../assets/Resume_AndyKotz.pdf';
 
 function Resume(props){
 
