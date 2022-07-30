@@ -3,7 +3,7 @@ import '../App.css';
 
 function TopBar(props) {
   return (
-    <span style={{justifyContent: "right", display:"flex", padding:"10px"}}>
+    <span style={{justifyContent: "right", display:"flex", padding:"10px", float:"right"}}>
         <div className="TopBarButton" onClick={() => props.handleClick(props.aboutRef)}>
             About
         </div>

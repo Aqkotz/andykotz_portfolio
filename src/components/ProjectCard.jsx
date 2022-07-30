@@ -25,16 +25,29 @@ function ProjectCard(props){
                 boxShadow: props.expanded ? "5px 5px 30px #404040" : (hovered ? "5px 5px 30px #404040" : "0px 0px 20px #606060"),
                 transform: props.expanded ? "scale(1)" : (hovered ? "scale(1.05)" : "scale(1)"),
                 order: props.expanded ? 1 : 0,
+                backgroundPosition: "center",
             }}>
-            {(props.expanded && props.project.expandedImages) && <div style={{display:"flex"}}>
+            {(props.expanded && props.project.expandedImages) && <div style={{
+                display:"flex", 
+                backgroundOrigin: "content-box", 
+                position:"absolute", 
+                top:"0",
+                left:"0",
+                width:"100%",
+                height:"100%",
+                borderRadius: "10px",
+                }}>
                 {props.project.expandedImages.map((image, index) => {
+
                     return(
-                        <img src={`url(${images(image)})`} key={index} style={{
+                        <div key={index} style={{
+                            backgroundImage: `url(${images(image)})`,
                             width: "100%",
                             height: "100%",
-                            objectFit: "cover",
-                            objectPosition: "center",
-                        }} />
+                            backgroundSize: "cover", 
+                            borderRadius: "10px",
+                            backgroundPosition: "center",
+                        }}></div>
                     )
                 })}
             </div>}
@@ -43,16 +56,20 @@ function ProjectCard(props){
                 top:"0",
                 transition: "opacity 0.25s ease-in-out",
                 opacity: props.expanded ? 1 : (hovered ? 1 : 0),
-                left: "3px",
+                left: "0",
                 fontSize: props.minified ? "2em" : "3em",
+                backgroundColor: "rgba(0.3,0.3,0.3,0.6)",
+                borderRadius: "10px",
             }}>{props.project.name}</h1>
             <p style={{
                 position:"absolute", 
                 bottom:"0",
                 transition: "opacity 0.25s ease-in-out",
                 opacity: props.expanded ? 1 : (hovered ? 1 : 0),
-                left: "3px",
+                left: "0",
                 fontSize: props.expanded ? "1.25em" : "1em",
+                backgroundColor: "rgba(0.3,0.3,0.3,0.6)",
+                borderRadius: "10px",
             }}>{props.expanded ? props.project.longDescription : props.project.description}</p>
             <div 
                 onMouseEnter = {() => {setExitHovered(true);}}
