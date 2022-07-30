@@ -1,6 +1,5 @@
 import React from "react";
 import '../App.css';
-import Andy from '../assets/Andy.png'
 
 function About(props){
     return(
@@ -24,6 +23,7 @@ function About(props){
                 </div>
                 <img 
                 src={require('../assets/Andy.png')}
+                alt="Andy"
                 style={{
                     width: "100%",
                     height: "500px",
