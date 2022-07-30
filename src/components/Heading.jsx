@@ -14,6 +14,9 @@ function Heading(props) {
         <a className="TopBarButton" href="https://www.linkedin.com/in/andy-kotz-6a58391b9/">
             LinkedIn
         </a>
+        <a className="TopBarButton" href="https://github.com/Aqkotz/andykotz_portfolio">
+            Website Repo
+        </a>
     </span>
     </div>
   );
