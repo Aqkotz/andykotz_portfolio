@@ -80,7 +80,10 @@ function Projects(props){
 
     return(
         <div className="Projects" ref={props.innerRef}>
-            <h1>Projects</h1>
+            <div style={{display:"flex", alignItems:"baseline"}}>
+                <h1>Projects</h1>
+                <p style={{color:"#afafaf"}}>Click to expand</p>
+            </div>
             <div className="Cards-container">
                 {data.map((project, index) => {
                     return(<ProjectCard 
