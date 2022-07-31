@@ -10,7 +10,7 @@ function Projects(props){
         {
             name: "Veridium",
             description: "A virtual reality chemistry education app",
-            longDescription: "Veridium is a virtual reality chemistry education app developed in Unity for Oculus Quest. The app is intended for use by university students. I was a developer and developer mentor working consistantly for nine months to develop the app.",
+            longDescription: "Veridium is a virtual reality chemistry education app developed in Unity for Oculus Quest. The app is intended for use by university students. I was a developer and developer mentor working consistently for nine months to develop the app.",
             image: "./Veridium.png",
             expandedImages: [
                 "./Veridium_3.png",
@@ -26,7 +26,6 @@ function Projects(props){
             image: "./SLSA.png",
             expandedImages: [
                 "./SLSA_1.png",
-                //"./SLSA_2.png",
             ],
             contributions:"",
         },
