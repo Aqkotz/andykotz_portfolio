@@ -8,6 +8,16 @@ function Projects(props){
 
     const data = [
         {
+            name: "Go Green",
+            description: "Carbon tracker and reduction tool for Dartmouth Foreign Study Programs",
+            longDescription: "Go Green allows students to track their carbon emissions and provides them with suggestions on how to reduce their carbon footprint. Track flights, car rides, trains, household carbon, and deliver insights to college administrators.",
+            image: "./GoGreen_1.png",
+            expandedImages: [
+                "./GoGreen_2.png",
+                "./GoGreen_3.png",
+            ],
+        },
+        {
             name: "Veridium",
             description: "A virtual reality chemistry education app",
             longDescription: "Veridium is a virtual reality chemistry education app developed in Unity for Oculus Quest. The app is intended for use by university students. I was a developer and developer mentor working consistently for nine months to develop the app.",
@@ -39,17 +49,23 @@ function Projects(props){
             ],
         },
         {
-            name: "FitWit",
-            description: "A Community-based fitness app",
-            longDescription: "FitWit is a community-based fitness app that allows users to connect with friends and coworkers with an appealing food-based fitness experience.",
-            image: "./FitWit.png",
+            name: "RavaOne",
+            description: "A digital microscope with AI features",
+            longDescription: "Digital microscope displaying digitial whole slide images with AI diagnosis features. Shown in a study to be as accurate for diagnosis as a traditional microscope and twice as fast as desktop software.",
+            image: "./SmartScope_1.png",
             expandedImages: [
-                "./FitWit_1.png",
-                "./FitWit_2.png",
-                "./FitWit_3.png",
-                "./FitWit_4.png",
+                "./SmartScope_2.jpg",
             ],
-
+        },
+        {
+            name: "Intubation AR",
+            description: "Augmented reality intubation training",
+            longDescription: "This is an AR experience that trains doctors and EMTs to intubate difficult airways. The app uses a physical mannequin and Meta Quest 3 to simulate the procedure. An AI assistant provides feedback on the procedure.",
+            image: "./InOurMidst_1.png",
+            expandedImages: [
+                "./InOurMidst_2.png",
+                "./InOurMidst_3.png",
+            ],
         },
         {
             name: "In Our Midst",
@@ -60,6 +76,19 @@ function Projects(props){
                 "./InOurMidst_2.png",
                 "./InOurMidst_3.png",
             ],
+        },
+        {
+            name: "FitWit",
+            description: "A community-based fitness app",
+            longDescription: "FitWit is a community-based fitness app that allows users to connect with friends and coworkers with an appealing food-based fitness experience. Developed for Dartmouth Professors.",
+            image: "./FitWit.png",
+            expandedImages: [
+                "./FitWit_1.png",
+                "./FitWit_2.png",
+                "./FitWit_3.png",
+                "./FitWit_4.png",
+            ],
+
         },
         {
             name: "This Website",
@@ -81,7 +110,7 @@ function Projects(props){
         <div className="Projects" ref={props.innerRef}>
             <div style={{display:"flex", alignItems:"baseline"}}>
                 <h1>Projects</h1>
-                <p style={{color:"#afafaf"}}>Click to expand</p>
+                <p style={{color:"#b6b6b6"}}>Click a tile to expand it</p>
             </div>
             <div className="Cards-container">
                 {data.map((project, index) => {

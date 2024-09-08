@@ -83,7 +83,7 @@ function ProjectCard(props){
                     borderRadius: "50%",
                     backgroundColor: "grey",
                     transition: "all 0.25s ease-in-out",
-                    opacity: props.expanded ? (exitHovered ? 0.5 : 0) : 0,
+                    opacity: props.expanded ? (exitHovered ? 0.75 : 0) : 0,
             }}></div>
             <img 
             onMouseEnter = {() => {setExitHovered(true);}}
