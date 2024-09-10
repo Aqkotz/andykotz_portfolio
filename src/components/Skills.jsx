@@ -61,6 +61,14 @@ function Skills(props){
             name: "Javascript",
             image: "./js_logo.png",
         },
+        {
+            name: "Swift",
+            image: "./swift_logo.png",
+        },
+        {
+            name: "MongoDB",
+            image: "./mongodb_logo.png",
+        },
     ]
 
     return(

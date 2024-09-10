@@ -15,9 +15,9 @@ function ProjectCard(props){
             onClick = {() => {if(!exitHovered) props.expandCard(props.id)}}
             className='Card' 
             style={{
-                backgroundImage: props.project.image ? `url(${images(props.project.image)})` : "none", 
+                backgroundImage: props.project.image && !props.expanded ? `url(${images(props.project.image)})` : "none", 
                 backgroundSize: "cover", 
-                backgroundColor: "f0f0f0", 
+                backgroundColor: "rgba(0,0,0,0.6)", 
                 width: props.minified ? "10%" : (props.expanded ? "80%" : "30%"), 
                 height: props.minified ? 100 : (props.expanded ? 400 : 200),
                 transition: "transform 0.25s ease-in-out",
@@ -43,10 +43,11 @@ function ProjectCard(props){
                         <div key={index} style={{
                             backgroundImage: `url(${images(image)})`,
                             width: "100%",
-                            height: "100%",
+                            height: "calc(100% - 10px)",
                             backgroundSize: "cover", 
                             borderRadius: "10px",
                             backgroundPosition: "center",
+                            margin: "5px",
                         }}></div>
                     )
                 })}

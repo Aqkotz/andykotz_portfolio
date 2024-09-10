@@ -60,11 +60,11 @@ function Projects(props){
         {
             name: "Intubation AR",
             description: "Augmented reality intubation training",
-            longDescription: "This is an AR experience that trains doctors and EMTs to intubate difficult airways. The app uses a physical mannequin and Meta Quest 3 to simulate the procedure. An AI assistant provides feedback on the procedure.",
-            image: "./InOurMidst_1.png",
+            longDescription: "AR experience to train doctors and EMTs to intubate difficult airways. The app uses a physical mannequin and Meta Quest 3 to simulate the procedure. An AI assistant provides feedback on the procedure.",
+            image: "./Airways_1.png",
             expandedImages: [
-                "./InOurMidst_2.png",
-                "./InOurMidst_3.png",
+                "./Airways_2.png",
+                "./Airways_3.png",
             ],
         },
         {
